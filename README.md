@@ -8,8 +8,8 @@ Batangas State University, Alangilan Campus
 
 | Name | Student Number | Section |
 |---|---|---|
-| Surname, First Name | | |
-| Surname, First Name | | |
+| Manalo, Zuriel | 21-02255 | MEXE 4102 |
+| Mercado, Rica Jean | | MEXE 4102 |
 
 ## Notebook links
 
