@@ -13,11 +13,11 @@ Batangas State University, Alangilan Campus
 
 ## Notebook links
 
-| Chapter | Member 1 |
+| Chapter | Links |
 |---|---|
-| Ch1_2_3 | [link]() |
-| Ch4 | [link]() |
-| Ch5 | [link]() |
+| Ch1_2_3 | [Introduction to Data Pre-processing, The Power of Data: Initial Steps in Loading, Understanding, and Exploring Data with Python, Cleaning Your Data]() |
+| Ch4 | [Unleashing the Power of Data Through Transformation and Feature Engineering]() |
+| Ch5 | [Unfolding the Essentials of Data Scaling and Normalization]() |
 | Ch6 | [link]() |
 | Ch7 | [link]() |
 | Ch8 | [link]() |
