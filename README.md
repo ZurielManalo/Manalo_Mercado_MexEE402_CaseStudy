@@ -49,10 +49,21 @@ This chapter taught  how to combine different numerical and categorical data typ
 * **Chapter 9 (Inverted Discretization Plot Logic):** In the provided notebook, the binning line `data['Age'] = pd.cut(data['Age'], bins=bins, labels=labels)` is run inside Cell 13. Immediately following in Cell 15, the notebook attempts to output a numeric distribution using `plt.hist(data['Age'].dropna())` while labeling the output string as `# Before discretization`. This creates an execution error because the original array column was already mutated into qualitative text categories, preventing a clean baseline histogram from rendering correctly. The pipeline code should be modified to preserve the original column or generate a distinct feature mapping array (`data['Age_binned']`).
 
 ## Note on AI tools
-Google Gemini for definitions, explanations, and analysis of code.
+Yes, we used AI tools such as Gemini and ChatGPT during the development and review of our notebooks.
+
+✨ Gemini
+
+We used Gemini recommendations while coding when we encountered errors in our code. It helped us identify where the error was located, understand what caused it, and determine what we could do to fix it.
+
+🤖 ChatGPT
+
+We used ChatGPT to help clarify theoretical data concepts, formulate the structural outlines for our markdown summaries, and systematically organize our final report responses.
+
+
+Using these tools allowed us to better understand the mathematical constraints behind machine learning pipelines and cross-validation folds when working with limited datasets.
 
 
 ## References
 McKinney, W. (2021). *Python for Data Analysis*, 3rd ed. O'Reilly.
 VanderPlas, J. *Python Data Science Handbook*.
-Scikit-Learn Documentation. *Pipeline and ColumnTransformer API reference*. https://scikit-learn.org
+
