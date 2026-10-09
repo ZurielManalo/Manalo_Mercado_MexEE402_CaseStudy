@@ -29,7 +29,7 @@ Batangas State University, Alangilan Campus
 &emsp; Chapter 4 taught us how to turn raw data into useful features, we were able to find the relationships of variables using interaction features. We also learned about binning which groups and labels datasets. Lastly the two types of encoding which are one-hot and ordinal and when to use each categorical encoding that would fit for the dataset.\
 &emsp; In Chapter 5 we learned how to standardize the data set so that it would be easier to see the difference between individual data. Additionally, we found out what scaling was and why it was needed. It taught us that without it the model would prioritize the larger set numbers and ignore the smaller set of numbers. 
 ## Errors we found
-While testing Chapter 4 i found that the Temperature Category was displaying the wrong values, the Temperature was 75 but the Temperature Category indicated it was Cool even if according to the bin and labels it should be warm. I added `right=False` to the code making it `df['Temperature Category'] = pd.cut(df['Temperature'], bins=bins, labels=labels, right=False )`. After that the Temperature Category displayed the correct label for the given temperature
+&emsp;While testing Chapter 4 i found that the Temperature Category was displaying the wrong values, the Temperature was 75 but the Temperature Category indicated it was Cool even if according to the bin and labels it should be warm. I added `right=False` to the code making it `df['Temperature Category'] = pd.cut(df['Temperature'], bins=bins, labels=labels, right=False )`. After that the Temperature Category displayed the correct label for the given temperature\
 
 ## Note on AI tools
 Google Gemini for definitions, explanations, and analysis of code.
