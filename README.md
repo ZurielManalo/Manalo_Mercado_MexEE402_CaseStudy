@@ -64,12 +64,8 @@ While testing Chapter 4, we found that the Temperature Category was displaying t
 We added `right=False` to the code, making it:
 
 ```python
-df['Temperature Category'] = pd.cut(
-    df['Temperature'],
-    bins=bins,
-    labels=labels,
-    right=False
-)
+df['Temperature Category'] = pd.cut(df['Temperature'], bins=bins, labels=labels, right=False)
+
 ```
 
 After that, the Temperature Category displayed the correct label for the given temperature.
