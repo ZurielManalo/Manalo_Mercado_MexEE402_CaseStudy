@@ -44,8 +44,15 @@ This chapter taught  how to combine different numerical and categorical data typ
 ## Errors we found
 &emsp;While testing Chapter 4 we found that the Temperature Category was displaying the wrong values, the Temperature was 75 but the Temperature Category indicated it was Cool even if according to the bin and labels it should be warm. We added `right=False` to the code making it `df['Temperature Category'] = pd.cut(df['Temperature'], bins=bins, labels=labels, right=False )`. After that the Temperature Category displayed the correct label for the given temperature\
 
+* **Chapter 6 (Z-Score Sample Correction):** In the original file, `scipy.stats.zscore(data)` is calculated on an array of length 8. The text evaluates it under standard sample definition assumptions, but `scipy.stats.zscore` defaults to a population metric (`ddof=0`). To calculate the true sample-corrected deviation score, it should be updated to `stats.zscore(data, ddof=1)`.
+* **Chapter 6 (IQR Interpolation Method):** The original notebook computes percentiles using `data.quantile(0.25)` and `data.quantile(0.75)`, yielding an IQR of `9.25`. This conflicts with the hand-calculated textbook definition of finding exact split medians (which yields a true IQR of `9.5`). The error should be corrected by setting the parameter to `interpolation='midpoint'` to match custom manual statistical splits.
+* **Chapter 9 (Inverted Discretization Plot Logic):** In the provided notebook, the binning line `data['Age'] = pd.cut(data['Age'], bins=bins, labels=labels)` is run inside Cell 13. Immediately following in Cell 15, the notebook attempts to output a numeric distribution using `plt.hist(data['Age'].dropna())` while labeling the output string as `# Before discretization`. This creates an execution error because the original array column was already mutated into qualitative text categories, preventing a clean baseline histogram from rendering correctly. The pipeline code should be modified to preserve the original column or generate a distinct feature mapping array (`data['Age_binned']`).
+
 ## Note on AI tools
 Google Gemini for definitions, explanations, and analysis of code.
 
-## References
 
+## References
+McKinney, W. (2021). *Python for Data Analysis*, 3rd ed. O'Reilly.
+VanderPlas, J. *Python Data Science Handbook*.
+Scikit-Learn Documentation. *Pipeline and ColumnTransformer API reference*. https://scikit-learn.org
