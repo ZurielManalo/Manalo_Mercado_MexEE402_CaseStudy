@@ -18,10 +18,10 @@ Batangas State University, Alangilan Campus
 | Ch1_2_3 | [Introduction to Data Pre-processing, The Power of Data: Initial Steps in Loading, Understanding, and Exploring Data with Python, Cleaning Your Data](https://colab.research.google.com/drive/1tjeuCZW5-EVsePXqjGKmnh8FQzo0NsrB?usp=sharing) |
 | Ch4 | [Unleashing the Power of Data Through Transformation and Feature Engineering](https://colab.research.google.com/drive/1RjX8WbJ-GnfDiDBJtoFO66FH5cHFuFfc?usp=sharing) |
 | Ch5 | [Unfolding the Essentials of Data Scaling and Normalization](https://colab.research.google.com/drive/10GnAQJPKp6tjJSnQN1HprRnWvyEAkuKK?usp=sharing) |
-| Ch6 | [link]() |
-| Ch7 | [link]() |
-| Ch8 | [link]() |
-| Ch9 | [link]() |
+| Ch6 | [Outlier detection](https://colab.research.google.com/drive/1e6V4F0GQJkxs8rxUVWyjBOzuQQ-VUPT0#scrollTo=xw-ulSLhnqbd) |
+| Ch7 | [Feature selection](https://colab.research.google.com/drive/1-okiKPYDlmhkfBnKtyHIJr5GcAOlnGCf#scrollTo=oIdgmuT_PTv6) |
+| Ch8 | [Constructing a preprocessing pipeline](https://colab.research.google.com/drive/12G8S06ZgwGvD_NCahoSLdwqvkBfBb921#scrollTo=y7rpcwtM1ALR) |
+| Ch9 | [Full pipeline and visualization](https://colab.research.google.com/drive/16w7chxNDIuME0EoYpJATHmPmOhYGkieq#scrollTo=Ikv0W_I7hvhA) |
 
 ## What we learned
 
