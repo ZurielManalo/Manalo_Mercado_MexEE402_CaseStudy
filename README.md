@@ -25,21 +25,14 @@ Batangas State University, Alangilan Campus
 
 ## What we learned
 
-One short paragraph per chapter, Ch1_2_3 to Ch9. Say what the chapter taught
-you and what surprised you. Not what the library does, but what you understood.
-
+&emsp;In Chapter 1 2 and 3 we learned what data preprocessing is and why it is essential for machine learning models. In chapter 3 we were specifically surprised since we didn't know that there was a way to find blank or missing values using a line of code.\
+&emsp; Chapter 4 taught us how to turn raw data into useful features, we were able to find the relationships of variables using interaction features. We also learned about binning which groups and labels datasets. Lastly the two types of encoding which are one-hot and ordinal and when to use each categorical encoding that would fit for the dataset.\
+&emsp; In Chapter 5 we learned how to standardize the data set so that it would be easier to see the difference between individual data. Additionally, we found out what scaling was and why it was needed. It taught us that without it the model would prioritize the larger set numbers and ignore the smaller set of numbers. 
 ## Errors we found
-
-List any mistake you found in the original notebooks, and the correct version.
-There are real ones in there. Finding them earns points.
+While testing Chapter 4 i found that the Temperature Category was displaying the wrong values, the Temperature was 75 but the Temperature Category indicated it was Cool even if according to the bin and labels it should be warm. I added `right=False` to the code making it `df['Temperature Category'] = pd.cut(df['Temperature'], bins=bins, labels=labels, right=False )`. After that the Temperature Category displayed the correct label for the given temperature
 
 ## Note on AI tools
-
-Say whether you used an AI tool, and what for. This is not a penalty.
-Hiding it is.
+Google Gemini for definitions, explanations, and analysis of code.
 
 ## References
 
-McKinney, W. (2021). Python for Data Analysis, 3rd ed. O'Reilly.
-VanderPlas, J. Python Data Science Handbook.
-Any other page or article you used.
