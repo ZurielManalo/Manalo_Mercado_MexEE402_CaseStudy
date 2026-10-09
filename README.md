@@ -136,7 +136,3 @@ Using these tools allowed us to better understand the mathematical constraints b
 
 
 
-## References
-McKinney, W. (2021). *Python for Data Analysis*, 3rd ed. O'Reilly.
-VanderPlas, J. *Python Data Science Handbook*.
-
